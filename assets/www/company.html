@@ -68,10 +68,10 @@
         }
         </script>
         <div data-role="page" style="min-height:480px;" dsid="company" id="j_0" class="type-interior"
-        data-theme="a" data-add-back-btn="false" data-back-btn-text="Back">
+        data-theme="a" data-add-back-btn="true" data-back-btn-text="Back">
             <!-- appHeader -->
-            <div data-role="header" data-position="fixed" data-theme="a" name="appHeader" id="j_2"
-            class='appHeader mobileheader1 '>
+            <div data-role="header" data-position="fixed" data-fullscreen="true" data-theme="a"
+            name="appHeader" id="j_2" class='appHeader mobileheader1 '>
                 <h1 dsid="appHeader">
                     Tun Industry
                 </h1>
@@ -169,6 +169,14 @@
                 <!-- workersNum -->
                 <div name="workersNum" id="j_16" dsid="workersNum" data-role="appery_label" class='workersNum mobilelabel7 '>
                 </div>
+                <!-- companyAddress -->
+                <div name="companyAddress" id="j_32" dsid="companyAddress" data-role="appery_label"
+                class='companyAddress mobilelabel18 '>
+                </div>
+                <!-- companyGovernerate -->
+                <div name="companyGovernerate" id="j_33" dsid="companyGovernerate" data-role="appery_label"
+                class='companyGovernerate mobilelabel19 '>
+                </div>
                 <!-- factoryLocation -->
                 <div id='j_27' dsid="factoryLocation" name="factoryLocation" tiggzitype="object"
                 apperytype="object" class='factoryLocation googlemap1' style='width:100%;'>
@@ -177,11 +185,11 @@
                 </div>
                 <ul data-role="listview" id="j_27_markers" name="factoryLocation_markers" dsid="factoryLocation_markers"
                 style="display:none">
-                    <!-- marker_29 -->
-                    <li id="j_28" name="marker_29" dsid="marker_29" tiggzitype="marker" apperytype="marker"
-                    rendered="true" latitude="" longitude="" text="Add Components Here" address="San Francisco, CA"
+                    <!-- marker -->
+                    <li id="j_28" name="marker" dsid="marker" tiggzitype="marker" apperytype="marker"
+                    rendered="true" latitude="35.6764" longitude="10.1017" text="" address="Tunisia, Kairouan"
                     show_info="true" style="display:none">
-                        <div id="j_28_infoWindow" name="marker_29_infoWindowContent" class='marker1'>
+                        <div id="j_28_infoWindow" name="marker_infoWindowContent" class='marker1'>
                             <!-- factoryAddress -->
                             <div name="factoryAddress" id="j_30" dsid="factoryAddress" data-role="appery_label"
                             class='factoryAddress mobilelabel17 '>
@@ -193,16 +201,12 @@
                         </div>
                     </li>
                 </ul>
-                <!-- mobilebutton_32 -->
-                <a data-role="button" name="mobilebutton_32" dsid="mobilebutton_32" class='  mobilebutton1'
+                <!-- addToFavorite -->
+                <a data-role="button" name="addToFavorite" dsid="addToFavorite" class='  mobilebutton1'
                 id='j_31' data-corners="true" data-icon="star" data-iconpos="right" data-inline="true"
                 data-mini="true" data-theme="a" tabIndex="2">
                 Ajouter aux favorites
                 </a>
-            </div>
-            <!-- mobilefooter1 -->
-            <div data-role="footer" data-position="fixed" class=" mobilefooter1" name="mobilefooter1"
-            dsid="mobilefooter1" id="j_32" data-theme="a">
             </div>
         </div>
     </body>
