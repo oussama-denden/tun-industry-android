@@ -305,6 +305,17 @@ j_55_js = function(runBeforeShow) { /* Object & array with components "name-to-i
                 }
             },
         });
+        $('#j_57 [name="fovoritesNav"]').die().live({
+            click: function() {
+                if (!$(this).attr('disabled')) {
+                    Appery.navigateTo('favorites', {
+                        transition: 'slideup',
+                        reverse: false
+                    });
+
+                }
+            },
+        });
 
         $('#j_62 [name="sector"]').die().live({
             change: function() {
