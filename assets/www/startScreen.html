@@ -44,10 +44,6 @@
         </script>
         <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
         </script>
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true">
-        </script>
-        <script type="text/javascript" src="res/lib/jquery-ui-map/jquery.ui.map.full.min.js">
-        </script>
         <script type="text/javascript" src="res/lib/base/appery.js">
         </script>
         <script type="text/javascript" src="res/lib/cordova.js">
@@ -67,34 +63,34 @@
             }).trigger('orientationchange');
         }
         </script>
-        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="j_55" class="type-interior"
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="j_35" class="type-interior"
         data-theme="a" data-add-back-btn="false" data-back-btn-text="Back">
             <!-- appHeader -->
-            <div data-role="header" data-position="fixed" data-theme="a" name="appHeader" id="j_57"
+            <div data-role="header" data-position="fixed" data-theme="a" name="appHeader" id="j_37"
             class='appHeader mobileheader3 '>
                 <h1 dsid="appHeader">
                     Tun Industry
                 </h1>
                 <!-- navigation -->
-                <div data-role="navbar" id="j_58" name="navigation" dsid="navigation" class="navigation mobilenavbar3"
+                <div data-role="navbar" id="j_38" name="navigation" dsid="navigation" class="navigation mobilenavbar1"
                 data-theme="a" style="position: relative;">
                     <ul>
                         <!-- search -->
                         <li>
-                            <a data-theme="a" class="ui-btn-active ui-state-persist" data-icon="search" id="j_59"
+                            <a data-theme="a" class="ui-btn-active ui-state-persist" data-icon="search" id="j_39"
                             dsid="search" name="search">
                             Search
                             </a>
                         </li>
-                        <!-- fovoritesNav -->
+                        <!-- favoritesNav -->
                         <li>
-                            <a data-theme="a" data-icon="star" id="j_60" dsid="fovoritesNav" name="fovoritesNav">
+                            <a data-theme="a" data-icon="star" id="j_40" dsid="favoritesNav" name="favoritesNav">
                             Favoris
                             </a>
                         </li>
                         <!-- profile -->
                         <li>
-                            <a data-theme="a" data-icon="gear" id="j_61" dsid="profile" name="profile">
+                            <a data-theme="a" data-icon="gear" id="j_41" dsid="profile" name="profile">
                             Profile
                             </a>
                         </li>
@@ -102,21 +98,21 @@
                 </div>
             </div>
             <!-- container -->
-            <div data-role="content" id="j_62" name="container" class="mobileContent mobilecontainer3"
+            <div data-role="content" id="j_42" name="container" class="mobileContent mobilecontainer3"
             dsid="container" data-theme="">
                 <link href="startScreen.css" rel="stylesheet" type="text/css" />
                 <script type="text/javascript" src="startScreen.js">
                 </script>
                 <!-- subscribedCompany -->
-                <div name="subscribedCompany" id="j_63" dsid="subscribedCompany" data-role="appery_label"
-                class='subscribedCompany mobilelabel24 '>
+                <div name="subscribedCompany" id="j_43" dsid="subscribedCompany" data-role="appery_label"
+                class='subscribedCompany mobilelabel5 '>
                 </div>
                 <!-- spacer_73 -->
-                <div id='j_66' dsid="spacer_73" class='mobilespacer mobilespacer4'>
+                <div id='j_46' dsid="spacer_73" class='mobilespacer mobilespacer4'>
                 </div>
                 <!-- sector -->
                 <div data-role="fieldcontain" class="mobileselectmenu1 sector">
-                    <select name="sector" id="j_64" dsid="sector" data-theme="b" data-inline="false"
+                    <select name="sector" id="j_44" dsid="sector" data-theme="b" data-inline="false"
                     data-mini="true" data-icon="arrow-d" data-iconpos="right" data-native-menu="false"
                     tabIndex="1" appery-class="mobileselectmenu1">
                         <option value='' reRender='sector' dsid='sector-0' selected="selected">
@@ -126,7 +122,7 @@
                 </div>
                 <!-- sectorActivities -->
                 <div data-role="fieldcontain" class="mobileselectmenu2 sectorActivities">
-                    <select name="sectorActivities" id="j_67" dsid="sectorActivities" data-theme="b"
+                    <select name="sectorActivities" id="j_47" dsid="sectorActivities" data-theme="b"
                     data-inline="false" data-mini="true" data-icon="arrow-d" data-iconpos="right" data-native-menu="false"
                     tabIndex="2" appery-class="mobileselectmenu2">
                         <option value='' reRender='sectorActivities' dsid='sectorActivities-0' selected="selected">
@@ -136,7 +132,7 @@
                 </div>
                 <!-- activityProducts -->
                 <div data-role="fieldcontain" class="mobileselectmenu3 activityProducts">
-                    <select name="activityProducts" id="j_69" dsid="activityProducts" data-theme="b"
+                    <select name="activityProducts" id="j_49" dsid="activityProducts" data-theme="b"
                     data-inline="false" data-mini="true" data-icon="arrow-d" data-iconpos="right" data-native-menu="false"
                     tabIndex="3" appery-class="mobileselectmenu3">
                         <option value='' reRender='activityProducts' dsid='activityProducts-0' selected="selected">
@@ -145,17 +141,17 @@
                     </select>
                 </div>
                 <!-- panel_78 -->
-                <div name="panel_78" dsid="panel_78" id="j_71" class=" mobilepanel1">
+                <div name="panel_78" dsid="panel_78" id="j_51" class=" mobilepanel1">
                 </div>
                 <!-- denomination -->
-                <div data-role="fieldcontain" class="mobiletextinput1 ">
-                    <input type="text" name="denomination" dsid="denomination" id="j_72" placeholder="Dénomination"
-                    tabIndex="4" data-theme="a" data-mini="true" class='denomination mobiletextinput1 '
+                <div data-role="fieldcontain" class="mobiletextinput6 ">
+                    <input type="text" name="denomination" dsid="denomination" id="j_52" placeholder="Dénomination"
+                    tabIndex="4" data-theme="a" data-mini="true" class='denomination mobiletextinput6 '
                     />
                 </div>
                 <!-- governerate -->
                 <div data-role="fieldcontain" class="mobileselectmenu4 governerate ">
-                    <select name="governerate" id="j_73" dsid="governerate" data-theme="b" data-inline="false"
+                    <select name="governerate" id="j_53" dsid="governerate" data-theme="b" data-inline="false"
                     data-mini="true" data-icon="arrow-d" data-iconpos="right" data-native-menu="false"
                     tabIndex="5" appery-class="mobileselectmenu4">
                         <option value='' reRender='governerate' dsid='governerate-0' selected="selected">
@@ -237,7 +233,7 @@
                 </div>
                 <!-- ppe -->
                 <div data-role="fieldcontain" class="mobileselectmenu5 ppe">
-                    <select name="ppe" id="j_75" dsid="ppe" data-theme="b" data-inline="false" data-mini="true"
+                    <select name="ppe" id="j_55" dsid="ppe" data-theme="b" data-inline="false" data-mini="true"
                     data-icon="arrow-d" data-iconpos="right" data-native-menu="false" tabIndex="6" appery-class="mobileselectmenu5">
                         <option value='' reRender='ppe' dsid='ppe-0' selected="selected">
                             Pays du Participant Etranger
@@ -413,8 +409,8 @@
                     </select>
                 </div>
                 <!-- searchButton -->
-                <a data-role="button" name="searchButton" dsid="searchButton" class=' searchButton mobilebutton2'
-                id='j_77' data-corners="true" data-icon="search" data-iconpos="right" data-mini="true"
+                <a data-role="button" name="searchButton" dsid="searchButton" class=' searchButton mobilebutton5'
+                id='j_57' data-corners="true" data-icon="search" data-iconpos="right" data-mini="true"
                 data-theme="a" tabIndex="7">
                 Search
                 </a>

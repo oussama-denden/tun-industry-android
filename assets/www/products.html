@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            products
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="res/lib/theme/cappucino/cappucino.css" rel="stylesheet" />
+        <link href="res/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.indexOf("Android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+            });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="products" id="j_18" class="type-interior"
+        data-theme="a" data-add-back-btn="true" data-back-btn-text="Retour">
+            <!-- appHeader -->
+            <div data-role="header" data-position="fixed" data-theme="a" name="appHeader" id="j_20"
+            class=' mobileheader2 '>
+                <h1 dsid="appHeader">
+                    Tun Indus
+                </h1>
+                <!-- customcomponent_13 -->
+                <div id='j_21' class="tiggzi-mobiletemplate mobiletemplate1" dsid="customcomponent_13"
+                tiggzitype="mobiletemplate" apperytype="mobiletemplate">
+                    <!-- customcomponent_13_navigation -->
+                    <div data-role="navbar" id="j_22" name="customcomponent_13_navigation" dsid="customcomponent_13_navigation"
+                    class="navigation mobilenavbar2" data-theme="a" style="position: relative;">
+                        <ul>
+                            <!-- customcomponent_13_browse -->
+                            <li>
+                                <a data-theme="a" class="ui-btn-active ui-state-persist" data-icon="grid" id="j_23"
+                                dsid="customcomponent_13_browse" name="customcomponent_13_browse">
+                                Explorer
+                                </a>
+                            </li>
+                            <!-- customcomponent_13_search -->
+                            <li>
+                                <a data-theme="a" data-icon="search" id="j_24" dsid="customcomponent_13_search"
+                                name="customcomponent_13_search">
+                                Recherche
+                                </a>
+                            </li>
+                            <!-- customcomponent_13_favorites -->
+                            <li>
+                                <a data-theme="a" data-icon="star" id="j_25" dsid="customcomponent_13_favorites"
+                                name="customcomponent_13_favorites">
+                                Favoris
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="j_26" name="mobilecontainer" class=" mobilecontainer2"
+            dsid="mobilecontainer" data-theme="">
+                <link href="products.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="products.js">
+                </script>
+                <!-- productsListLabel -->
+                <div name="productsListLabel" id="j_27" dsid="productsListLabel" data-role="appery_label"
+                class='productsListLabel mobilelabel4 '>
+                    Liste des produits:
+                </div>
+                <!-- spacer_3 -->
+                <div id='j_28' dsid="spacer_3" class='mobilespacer mobilespacer2'>
+                </div>
+                <!-- productsList -->
+                <ul data-role="listview" id="j_29" class='productsList mobilelist2 ' name="productsList"
+                dsid="productsList" data-filter="true" data-filter-theme="a" data-theme="a" data-autodividers="true"
+                data-divider-theme="b" data-count-theme="b" style="">
+                    <!-- product -->
+                    <li id="j_30" name="product" dsid="product" class=' mobilelistitem2 '>
+                        <div class="ui-li-static-container">
+                            <!-- productName -->
+                            <div name="productName" id="j_33" dsid="productName" data-role="appery_label" class='productName mobilelabel6 '>
+                            </div>
+                            <!-- productId -->
+                            <div name="productId" id="j_32" dsid="productId" data-role="appery_label" class='productId mobilelabel5 '>
+                            </div>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow extra">
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class=" mobilefooter2" name="mobilefooter1"
+            dsid="mobilefooter1" id="j_34" data-theme="a">
+            </div>
+        </div>
+    </body>
+
+</html>

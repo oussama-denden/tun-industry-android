@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            createAccount
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="res/lib/theme/cappucino/cappucino.css" rel="stylesheet" />
+        <link href="res/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.indexOf("Android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+            });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="createAccount" id="j_0" class="type-interior"
+        data-theme="a" data-add-back-btn="true" data-back-btn-text="Back">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-theme="a" name="mobileheader"
+            id="j_2" class=' mobileheader1 '>
+                <h1 dsid="mobileheader">
+                    Tun Indus
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="j_3" name="mobilecontainer" class=" mobilecontainer1"
+            dsid="mobilecontainer" data-theme="">
+                <link href="createAccount.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="createAccount.js">
+                </script>
+                <!-- signIn -->
+                <div name="signIn" id="j_4" dsid="signIn" data-role="appery_label" class='signIn mobilelabel1 '>
+                    Inscription :
+                </div>
+                <!-- spacer_3 -->
+                <div id='j_5' dsid="spacer_3" class='mobilespacer mobilespacer1'>
+                </div>
+                <!-- error -->
+                <div name="error" id="j_11" dsid="error" data-role="appery_label" class='error mobilelabel2 '>
+                </div>
+                <!-- login -->
+                <div data-role="fieldcontain" class="mobiletextinput1 ">
+                    <input type="text" name="login" dsid="login" id="j_6" placeholder="Login" tabIndex="1"
+                    data-theme="a" class='login mobiletextinput1 ' />
+                </div>
+                <!-- email -->
+                <div data-role="fieldcontain" class="mobiletextinput2 ">
+                    <input type="text" name="email" dsid="email" id="j_7" placeholder="E-mail" tabIndex="2"
+                    data-theme="a" class='email mobiletextinput2 ' />
+                </div>
+                <!-- password -->
+                <div data-role="fieldcontain" class="mobiletextinput3 ">
+                    <input type="text" name="password" dsid="password" id="j_8" placeholder="password"
+                    tabIndex="3" data-theme="a" class='password mobiletextinput3 ' />
+                </div>
+                <!-- spacer_9 -->
+                <div id='j_9' dsid="spacer_9" class='mobilespacer mobilespacer2'>
+                </div>
+                <!-- submit -->
+                <a data-role="button" name="submit" dsid="submit" class=' submit mobilebutton1'
+                id='j_10' data-corners="true" data-mini="false" data-theme="a" tabIndex="4">
+                Valider
+                </a>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class=" mobilefooter1" name="mobilefooter1"
+            dsid="mobilefooter1" id="j_12" data-theme="a">
+            </div>
+        </div>
+    </body>
+
+</html>

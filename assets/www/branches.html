@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            branches
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="res/lib/theme/cappucino/cappucino.css" rel="stylesheet" />
+        <link href="res/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.indexOf("Android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+            });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="branches" id="j_0" class="type-interior"
+        data-theme="a" data-add-back-btn="true" data-back-btn-text="Retour">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-theme="a" name="mobileheader"
+            id="j_2" class=' mobileheader1 '>
+                <h1 dsid="mobileheader">
+                    Tun Indus
+                </h1>
+                <!-- navigation -->
+                <div data-role="navbar" id="j_3" name="navigation" dsid="navigation" class="navigation mobilenavbar1"
+                data-theme="a" style="position: relative;">
+                    <ul>
+                        <!-- browse -->
+                        <li>
+                            <a data-theme="a" class="ui-btn-active ui-state-persist" data-icon="grid" id="j_4"
+                            dsid="browse" name="browse">
+                            Explorer
+                            </a>
+                        </li>
+                        <!-- search -->
+                        <li>
+                            <a data-theme="a" data-icon="search" id="j_5" dsid="search" name="search">
+                            Recherche
+                            </a>
+                        </li>
+                        <!-- favorites -->
+                        <li>
+                            <a data-theme="a" data-icon="star" id="j_6" dsid="favorites" name="favorites">
+                            Favoris
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="j_7" name="mobilecontainer" class=" mobilecontainer1"
+            dsid="mobilecontainer" data-theme="">
+                <link href="branches.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="branches.js">
+                </script>
+                <!-- branchListLabel -->
+                <div name="branchListLabel" id="j_8" dsid="branchListLabel" data-role="appery_label"
+                class='branchListLabel mobilelabel1 '>
+                    Liste de branches d'activitée
+                </div>
+                <!-- spacer_5 -->
+                <div id='j_9' dsid="spacer_5" class='mobilespacer mobilespacer1'>
+                </div>
+                <!-- branchList -->
+                <ul data-role="listview" id="j_10" class='branchList mobilelist1 ' name="branchList"
+                dsid="branchList" data-filter="true" data-filter-theme="a" data-theme="a" data-autodividers="true"
+                data-divider-theme="b" data-count-theme="b" style="">
+                    <!-- branch -->
+                    <li id="j_11" name="branch" dsid="branch" class=' mobilelistitem1 '>
+                        <div class="ui-li-static-container">
+                            <!-- brancheName -->
+                            <div name="brancheName" id="j_14" dsid="brancheName" data-role="appery_label" class='brancheName mobilelabel3 '>
+                            </div>
+                            <!-- branchId -->
+                            <div name="branchId" id="j_13" dsid="branchId" data-role="appery_label" class='branchId mobilelabel2 '>
+                            </div>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow extra">
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class=" mobilefooter1" name="mobilefooter1"
+            dsid="mobilefooter1" id="j_15" data-theme="a">
+            </div>
+        </div>
+    </body>
+
+</html>

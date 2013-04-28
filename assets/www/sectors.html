@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="res/lib/theme/cappucino/cappucino.css" rel="stylesheet" />
+        <link href="res/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.indexOf("Android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+            });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="j_37" class="type-interior"
+        data-theme="a" data-add-back-btn="false" data-back-btn-text="Back">
+            <!-- appHeader -->
+            <div data-role="header" data-position="fixed" data-theme="a" name="appHeader" id="j_39"
+            class='appHeader mobileheader3 '>
+                <h1 dsid="appHeader">
+                    Tun Indus
+                </h1>
+                <!-- navigationBar -->
+                <div id='j_40' class="tiggzi-mobiletemplate mobiletemplate2" dsid="navigationBar"
+                tiggzitype="mobiletemplate" apperytype="mobiletemplate">
+                    <!-- navigationBar_navigation -->
+                    <div data-role="navbar" id="j_41" name="navigationBar_navigation" dsid="navigationBar_navigation"
+                    class="navigation mobilenavbar3" data-theme="a" style="position: relative;">
+                        <ul>
+                            <!-- navigationBar_browse -->
+                            <li>
+                                <a data-theme="a" class="ui-btn-active ui-state-persist" data-icon="grid" id="j_42"
+                                dsid="navigationBar_browse" name="navigationBar_browse">
+                                Explorer
+                                </a>
+                            </li>
+                            <!-- navigationBar_search -->
+                            <li>
+                                <a data-theme="a" data-icon="search" id="j_43" dsid="navigationBar_search" name="navigationBar_search">
+                                Recherche
+                                </a>
+                            </li>
+                            <!-- navigationBar_favorites -->
+                            <li>
+                                <a data-theme="a" data-icon="star" id="j_44" dsid="navigationBar_favorites" name="navigationBar_favorites">
+                                Favoris
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- container -->
+            <div data-role="content" id="j_45" name="container" class="mobileContent mobilecontainer3"
+            dsid="container" data-theme="">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- sectorsListLabel -->
+                <div name="sectorsListLabel" id="j_46" dsid="sectorsListLabel" data-role="appery_label"
+                class='sectorsListLabel mobilelabel7 '>
+                    Liste des secteurs
+                </div>
+                <!-- spacer_73 -->
+                <div id='j_47' dsid="spacer_73" class='mobilespacer mobilespacer3'>
+                </div>
+                <!-- sectorList -->
+                <ul data-role="listview" id="j_48" class='sectorList mobilelist3 ' name="sectorList"
+                dsid="sectorList" data-filter="true" data-filter-theme="a" data-filter-placeholder="Nom de secteur"
+                data-theme="a" data-divider-theme="b" data-count-theme="b" style="">
+                    <!-- sector -->
+                    <li id="j_49" name="sector" dsid="sector" class=' mobilelistitem3 '>
+                        <div class="ui-li-static-container">
+                            <!-- sectorName -->
+                            <div name="sectorName" id="j_52" dsid="sectorName" data-role="appery_label" class='sectorName mobilelabel9 '>
+                            </div>
+                            <!-- sectorId -->
+                            <div name="sectorId" id="j_51" dsid="sectorId" data-role="appery_label" class='sectorId mobilelabel8 '>
+                            </div>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow extra">
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="mobileFooter mobilefooter3"
+            name="mobilefooter1" dsid="mobilefooter1" id="j_53" data-theme="a">
+            </div>
+        </div>
+    </body>
+
+</html>
