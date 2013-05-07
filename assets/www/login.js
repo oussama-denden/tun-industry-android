@@ -89,8 +89,8 @@ Appery.AppPages = [{
     "name": "login",
     "location": "login.html"
 }, {
-    "name": "startScreen",
-    "location": "startScreen.html"
+    "name": "sectors",
+    "location": "sectors.html"
 }];
 
 j_15_js = function(runBeforeShow) { /* Object & array with components "name-to-id" mapping */
@@ -244,7 +244,7 @@ j_15_js = function(runBeforeShow) { /* Object & array with components "name-to-i
     													$('#j_21').is(':checked'));
     											window.localStorage.setItem(
     													"isUserLogged", true);
-    											Appery.navigateTo('startScreen', {
+    											Appery.navigateTo('sectors', {
     						                        transition: 'slidedown',
     						                        reverse: false
     						                    });
@@ -353,7 +353,7 @@ j_15_js = function(runBeforeShow) { /* Object & array with components "name-to-i
         $('#j_18 [name="skip"]').die().live({
             click: function() {
                 if (!$(this).attr('disabled')) {
-                    Appery.navigateTo('startScreen', {
+                    Appery.navigateTo('sectors', {
                         transition: 'fade',
                         reverse: false
                     });

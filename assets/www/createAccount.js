@@ -90,8 +90,8 @@ Appery.AppPages = [{
     "name": "login",
     "location": "login.html"
 }, {
-    "name": "startScreen",
-    "location": "startScreen.html"
+    "name": "sectors",
+    "location": "sectors.html"
 }];
 
 j_0_js = function(runBeforeShow) { /* Object & array with components "name-to-id" mapping */
@@ -236,7 +236,7 @@ j_0_js = function(runBeforeShow) { /* Object & array with components "name-to-id
     													result.password);
     											window.localStorage.setItem(
     													"isUserLogged", true);
-    											Appery.navigateTo('startScreen', {
+    											Appery.navigateTo('sectors', {
     						                        transition: 'slidedown',
     						                        reverse: false
     						                    });

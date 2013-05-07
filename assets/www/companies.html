@@ -67,72 +67,84 @@
             }).trigger('orientationchange');
         }
         </script>
-        <div data-role="page" style="min-height:480px;" dsid="companies" id="j_37" class="type-interior"
-        data-theme="a" data-add-back-btn="true" data-back-btn-text="Back">
-            <!-- appHeader -->
-            <div data-role="header" data-position="fixed" data-theme="a" name="appHeader" id="j_39"
-            class='addHeader mobileheader2 '>
-                <h1 dsid="appHeader">
-                    Tun Industry
+        <div data-role="page" style="min-height:480px;" dsid="companies" id="j_0" class="type-interior"
+        data-theme="a" data-add-back-btn="true" data-back-btn-text="Retour">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-theme="a" name="mobileheader"
+            id="j_2" class=' mobileheader1 '>
+                <h1 dsid="mobileheader">
+                    Tun Indus
                 </h1>
                 <!-- navigation -->
-                <div data-role="navbar" id="j_40" name="navigation" dsid="navigation" class="navigation mobilenavbar2"
+                <div data-role="navbar" id="j_3" name="navigation" dsid="navigation" class="navigation mobilenavbar1"
                 data-theme="a" style="position: relative;">
                     <ul>
+                        <!-- browse -->
+                        <li>
+                            <a data-theme="a" data-icon="grid" id="j_4" dsid="browse" name="browse">
+                            Explorer
+                            </a>
+                        </li>
                         <!-- search -->
                         <li>
-                            <a data-theme="a" class="ui-btn-active ui-state-persist" data-icon="search" id="j_41"
+                            <a data-theme="a" data-icon="search" id="j_5"
                             dsid="search" name="search">
-                            Search
+                            Recherche
                             </a>
                         </li>
-                        <!-- trips -->
+                        <!-- favorites -->
                         <li>
-                            <a data-theme="a" data-icon="star" id="j_42" dsid="trips" name="trips">
+                            <a data-theme="a" data-icon="star" id="j_6" dsid="favorites" name="favorites">
                             Favoris
-                            </a>
-                        </li>
-                        <!-- profile -->
-                        <li>
-                            <a data-theme="a" data-icon="gear" id="j_43" dsid="profile" name="profile">
-                            Profile
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <!-- mobilecontainer -->
-            <div data-role="content" id="j_44" name="mobilecontainer" class=" mobilecontainer2"
+            <div data-role="content" id="j_7" name="mobilecontainer" class=" mobilecontainer1"
             dsid="mobilecontainer" data-theme="">
                 <link href="companies.css" rel="stylesheet" type="text/css" />
                 <script type="text/javascript" src="companies.js">
                 </script>
-                <!-- searchResults -->
-                <ul data-role="listview" id="j_45" class='searchResults mobilelist1 ' name="searchResults"
-                dsid="searchResults" data-inset="true" data-filter="true" data-filter-theme="b" data-theme="b"
-                data-autodividers="true" data-divider-theme="b" data-count-theme="a" style="" data-split-icon="arrow-r">
-                    <!-- companiesList -->
-                    <li id="j_46" name="companiesList" dsid="companiesList" class=' mobilelistitem1 '>
+                <!-- mobilelabel_3 -->
+                <div name="mobilelabel_3" id="j_8" dsid="mobilelabel_3" data-role="appery_label"
+                class=' mobilelabel1 '>
+                    Résultat de recherche:
+                </div>
+                <!-- spacer_4 -->
+                <div id='j_9' dsid="spacer_4" class='mobilespacer mobilespacer1'>
+                </div>
+                <!-- companiesList -->
+                <ul data-role="listview" id="j_10" class='companiesList mobilelist1 ' name="companiesList"
+                dsid="companiesList" data-inset="true" data-filter="true" data-filter-theme="a" data-filter-placeholder="Filtrer Résultat"
+                data-theme="a" data-autodividers="true" data-divider-theme="b" data-count-theme="b"
+                style="">
+                    <!-- mobilelistitem_6 -->
+                    <li id="j_11" name="mobilelistitem_6" dsid="mobilelistitem_6" class=' mobilelistitem1 '>
                         <div class="ui-li-static-container">
                             <!-- companyName -->
-                            <div name="companyName" id="j_51" dsid="companyName" data-role="appery_label" class='companyName mobilelabel23 '>
-                            </div>
-                            <!-- companyGovernerate -->
-                            <div name="companyGovernerate" id="j_49" dsid="companyGovernerate" data-role="appery_label"
-                            class='companyGovernerate mobilelabel21 '>
+                            <div name="companyName" id="j_14" dsid="companyName" data-role="appery_label" class='companyName mobilelabel3 '>
                             </div>
                             <!-- companyAddress -->
-                            <div name="companyAddress" id="j_50" dsid="companyAddress" data-role="appery_label"
-                            class='companyAddress mobilelabel22 '>
+                            <div name="companyAddress" id="j_16" dsid="companyAddress" data-role="appery_label"
+                            class='companyAddress mobilelabel5 '>
+                            </div>
+                            <!-- companyTel -->
+                            <div name="companyTel" id="j_15" dsid="companyTel" data-role="appery_label" class='companyTel mobilelabel4 '>
                             </div>
                             <!-- companyId -->
-                            <div name="companyId" id="j_48" dsid="companyId" data-role="appery_label" class=' mobilelabel20 '>
+                            <div name="companyId" id="j_13" dsid="companyId" data-role="appery_label" class=' mobilelabel2 '>
                             </div>
                             <span class="ui-icon ui-icon-arrow-r ui-icon-shadow extra">
                             </span>
                         </div>
                     </li>
                 </ul>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class=" mobilefooter1" name="mobilefooter1"
+            dsid="mobilefooter1" id="j_17" data-theme="a">
             </div>
         </div>
     </body>
